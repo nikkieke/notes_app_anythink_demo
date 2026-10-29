@@ -1,16 +1,30 @@
-# notes_app_anythink_demo
+# Notes (Flutter + Anythink)
 
-A new Flutter project.
+A simple notes app with Google sign-in, using [Anythink](https://anythink.cloud) as the backend.
 
-## Getting Started
+Requires Flutter 3.38+.
 
-This project is a starting point for a Flutter application.
+## Run
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter pub get
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This uses mock data (fake sign-in, in-memory notes). Same as:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter run --dart-define=BACKEND=mock
+```
+
+## Run with Anythink
+
+```bash
+flutter run --dart-define=BACKEND=anythink
+```
+
+## Test
+
+```bash
+flutter test
+```
